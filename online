@@ -1,0 +1,10 @@
+/tools/power/cpupower/utils/helpers/sysfs.c
+sysfs_is_cpu_online
+./tools/power/cpupower/utils/helpers/topology.c
+core_info[cpu].is_online
+./include/linux/cpumask.h:#define cpu_online(cpu)		cpumask_test_cpu((cpu), cpu_online_mask)
+
+cpu_online_mask
+./cpu.c:const struct cpumask *const cpu_online_mask = to_cpumask(cpu_online_bits);
+./include/linux/bitmap.h: * The DECLARE_BITMAP(name,bits) macro, in linux/types.h, can be used
+CONFIG_NR_CPUS)
